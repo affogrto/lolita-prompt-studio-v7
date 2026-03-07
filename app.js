@@ -1,6 +1,7 @@
 const state = {
   data: {
     ai: [],
+    presets: [],
     styles: [],
     stylePrompts: {},
     subcategories: {},
@@ -27,6 +28,71 @@ const state = {
     lighting: "",
     color: ""
   }
+};
+
+const PRESET_FIELD_IDS = {
+  ai: "ai",
+  style: "style",
+  scene: "scene",
+  lightingMode: "lighting",
+  lightingManual: "lightingManual",
+  colorMode: "color",
+  colorManual: "colorManual",
+  mood: "mood",
+  camera: "camera",
+  pose: "pose",
+  faceLock: "faceLock",
+  hairLock: "hairLock",
+  faceModel: "faceModel",
+  hairStyle: "hairStyle",
+  hairColor: "hairColor",
+  expression: "expression",
+  eyeStyle: "eyeStyle",
+  makeup: "makeup",
+  skinTone: "skinTone",
+  vibe: "vibe",
+  characterExtra: "characterExtra",
+  userNegative: "negativeExtra",
+  silhouetteWeight: "silhouetteWeight",
+  fabricWeight: "fabricWeight",
+  sceneWeight: "sceneWeight",
+  characterWeight: "characterWeight"
+};
+
+const PRESET_APPLY_ORDER = [
+  "ai",
+  "style",
+  "scene",
+  "lightingMode",
+  "lightingManual",
+  "colorMode",
+  "colorManual",
+  "mood",
+  "camera",
+  "pose",
+  "faceLock",
+  "hairLock",
+  "faceModel",
+  "hairStyle",
+  "hairColor",
+  "expression",
+  "eyeStyle",
+  "makeup",
+  "skinTone",
+  "vibe",
+  "characterExtra",
+  "userNegative",
+  "silhouetteWeight",
+  "fabricWeight",
+  "sceneWeight",
+  "characterWeight"
+];
+
+const RANGE_OUTPUT_IDS = {
+  silhouetteWeight: "silhouetteWeightValue",
+  fabricWeight: "fabricWeightValue",
+  sceneWeight: "sceneWeightValue",
+  characterWeight: "characterWeightValue"
 };
 
 const $ = (id) => document.getElementById(id);
@@ -144,6 +210,7 @@ async function loadJson(path) {
 async function loadAllData() {
   const [
     ai,
+    presetFile,
     styles,
     stylePrompts,
     subcategories,
@@ -157,6 +224,7 @@ async function loadAllData() {
     promptRules
   ] = await Promise.all([
     loadJson("./data/ai.json"),
+    loadJson("./data/presets.json"),
     loadJson("./data/styles.json"),
     loadJson("./data/style_prompts.json"),
     loadJson("./data/subcategories.json"),
@@ -171,6 +239,7 @@ async function loadAllData() {
   ]);
 
   state.data.ai = ai;
+  state.data.presets = Array.isArray(presetFile?.presets) ? presetFile.presets : [];
   state.data.styles = styles;
   state.data.stylePrompts = stylePrompts;
   state.data.subcategories = subcategories;
@@ -212,9 +281,42 @@ function setSelectValue(selectId, value) {
   el.value = value;
 }
 
+function ensureSelectOption(selectId, value, label = value) {
+  const el = $(selectId);
+  const safeValue = safeText(value);
+  if (!el || !safeValue) return;
+
+  const existing = Array.from(el.options).find((option) => option.value === safeValue);
+  if (existing) return;
+
+  const opt = document.createElement("option");
+  opt.value = safeValue;
+  opt.textContent = safeText(label) || safeValue;
+  opt.dataset.presetFallback = "true";
+  el.appendChild(opt);
+}
+
+function setSelectValueWithFallback(selectId, value, label = value) {
+  const el = $(selectId);
+  if (!el) return;
+
+  const safeValue = safeText(value);
+  if (safeValue) {
+    ensureSelectOption(selectId, safeValue, label);
+  }
+  el.value = safeValue;
+}
+
 function fillSubcategorySelect(styleValue) {
   const list = state.data.subcategories[styleValue] || [];
   fillSelect("subcategory", list, { placeholder: "選択してください" });
+}
+
+function syncRangeOutput(rangeId) {
+  const range = $(rangeId);
+  const output = $(RANGE_OUTPUT_IDS[rangeId]);
+  if (!range || !output) return;
+  output.textContent = Number(range.value).toFixed(2);
 }
 
 function bindRange(rangeId, outputId) {
@@ -222,9 +324,7 @@ function bindRange(rangeId, outputId) {
   const output = $(outputId);
   if (!range || !output) return;
 
-  const sync = () => {
-    output.textContent = Number(range.value).toFixed(2);
-  };
+  const sync = () => syncRangeOutput(rangeId);
 
   range.addEventListener("input", sync);
   sync();
@@ -278,6 +378,138 @@ function getUiValues() {
     sceneWeight: Number($("sceneWeight")?.value || 1.1).toFixed(2),
     characterWeight: Number($("characterWeight")?.value || 1.2).toFixed(2)
   };
+}
+
+function findPresetById(presetId) {
+  const id = safeText(presetId);
+  return state.data.presets.find((preset) => safeText(preset?.id) === id) || null;
+}
+
+function findPresetVariant(preset, variantId) {
+  const id = safeText(variantId);
+  if (!preset || !Array.isArray(preset.variants) || !id) return null;
+  return preset.variants.find((variant) => safeText(variant?.id) === id) || null;
+}
+
+function buildPresetForApply(preset, variant = null) {
+  if (!preset) return null;
+
+  const variantUi = variant
+    ? Object.fromEntries(
+        Object.entries(variant).filter(([key]) => key !== "id" && key !== "label")
+      )
+    : {};
+
+  return {
+    ...preset,
+    ui: {
+      ...(preset.ui || {}),
+      ...variantUi
+    }
+  };
+}
+
+function updatePresetSummary(preset = null, variant = null) {
+  const summaryEl = $("presetSummary");
+  if (!summaryEl) return;
+
+  if (!preset) {
+    summaryEl.textContent = "プリセットを選ぶと、狙いと要約がここに表示されます。";
+    return;
+  }
+
+  const parts = [];
+  const summary = safeText(preset.summary);
+  const category = safeText(preset.category);
+  const categoryLabel = {
+    buzz: "バズ狙い",
+    comparison: "比較用",
+    series: "シリーズ用"
+  }[category] || category;
+  const variantIds = Array.isArray(preset.variants)
+    ? preset.variants.map((entry) => safeText(entry?.id)).filter(Boolean)
+    : [];
+
+  if (summary) {
+    parts.push(summary);
+  }
+
+  if (category) {
+    parts.push(`カテゴリ: ${categoryLabel}`);
+  }
+
+  if (variant) {
+    const overrides = Object.entries(variant)
+      .filter(([key, value]) => key !== "id" && safeText(value))
+      .map(([key, value]) => `${key}=${safeText(value)}`);
+
+    parts.push(
+      overrides.length
+        ? `Variant ${safeText(variant.id)}: ${overrides.join(" / ")}`
+        : `Variant ${safeText(variant.id)}`
+    );
+  } else if (variantIds.length) {
+    parts.push(`比較差分: Base / ${variantIds.join(" / ")}`);
+  }
+
+  summaryEl.textContent = parts.join(" | ");
+}
+
+function fillPresetSelect() {
+  fillSelect("preset", state.data.presets, { placeholder: "選択してください" });
+}
+
+function fillPresetVariantSelect(preset) {
+  const field = $("presetVariantField");
+  const variants = Array.isArray(preset?.variants) ? preset.variants : [];
+
+  fillSelect("presetVariant", variants, { placeholder: "Base" });
+
+  if (field) {
+    field.hidden = variants.length === 0;
+  }
+}
+
+function setPresetFieldValue(key, value) {
+  const fieldId = PRESET_FIELD_IDS[key];
+  const el = $(fieldId);
+  if (!fieldId || !el) return;
+
+  if (el.tagName === "SELECT") {
+    setSelectValueWithFallback(fieldId, value, value);
+    return;
+  }
+
+  el.value =
+    typeof value === "number" && RANGE_OUTPUT_IDS[fieldId]
+      ? Number(value).toFixed(2)
+      : safeText(value);
+
+  if (RANGE_OUTPUT_IDS[fieldId]) {
+    syncRangeOutput(fieldId);
+  }
+}
+
+function applyPreset(preset) {
+  const presetUi = preset?.ui;
+  if (!presetUi || typeof presetUi !== "object") return;
+
+  if (Object.prototype.hasOwnProperty.call(presetUi, "style")) {
+    setPresetFieldValue("style", presetUi.style);
+    fillSubcategorySelect(safeText(presetUi.style));
+  }
+
+  for (const key of PRESET_APPLY_ORDER) {
+    if (key === "style") continue;
+    if (!Object.prototype.hasOwnProperty.call(presetUi, key)) continue;
+    setPresetFieldValue(key, presetUi[key]);
+  }
+
+  const values = getUiValues();
+  toggleConditionalFields(values);
+  updateStyleDescription(values.style);
+  updateCharacterPreview(values);
+  generatePrompt();
 }
 
 function resolvePose(values) {
@@ -707,7 +939,32 @@ function randomCharacter() {
   generatePrompt();
 }
 
+function handlePresetChange() {
+  const preset = findPresetById($("preset")?.value);
+
+  fillPresetVariantSelect(preset);
+  updatePresetSummary(preset);
+
+  if (!preset) return;
+
+  applyPreset(buildPresetForApply(preset));
+}
+
+function handlePresetVariantChange() {
+  const preset = findPresetById($("preset")?.value);
+  const variant = findPresetVariant(preset, $("presetVariant")?.value);
+
+  updatePresetSummary(preset, variant);
+
+  if (!preset) return;
+
+  applyPreset(buildPresetForApply(preset, variant));
+}
+
 function bindEvents() {
+  $("preset")?.addEventListener("change", handlePresetChange);
+  $("presetVariant")?.addEventListener("change", handlePresetVariantChange);
+
   $("style")?.addEventListener("change", () => {
     fillSubcategorySelect($("style")?.value || "");
     generatePrompt();
@@ -739,6 +996,7 @@ function bindEvents() {
   });
 
   $("characterExtra")?.addEventListener("input", generatePrompt);
+  $("negativeExtra")?.addEventListener("input", generatePrompt);
 
   [
     "silhouetteWeight",
@@ -773,6 +1031,8 @@ async function init() {
     await loadAllData();
 
     fillSelect("ai", state.data.ai);
+    fillPresetSelect();
+    fillPresetVariantSelect(null);
     fillSelect("style", state.data.styles, { placeholder: "選択してください" });
     fillSelect("scene", state.data.scenes);
     fillSelect("camera", state.data.camera);
@@ -803,6 +1063,7 @@ async function init() {
     bindRange("characterWeight", "characterWeightValue");
 
     bindEvents();
+    updatePresetSummary();
     generatePrompt();
   } catch (error) {
     console.error(error);

@@ -25,6 +25,20 @@
 
           <div class="form-grid grid-2">
             <div class="field">
+              <label for="preset">プリセット</label>
+              <select id="preset"></select>
+            </div>
+
+            <div class="field" id="presetVariantField" hidden>
+              <label for="presetVariant">Variant</label>
+              <select id="presetVariant"></select>
+            </div>
+          </div>
+
+          <p id="presetSummary" class="preset-summary">プリセットを選ぶと、狙いと要約がここに表示されます。</p>
+
+          <div class="form-grid grid-2">
+            <div class="field">
               <label for="ai">生成AI</label>
               <select id="ai"></select>
             </div>
@@ -162,6 +176,15 @@
               id="characterExtra"
               type="text"
               placeholder="example: subtle wink, soft catchlight, refined elegance"
+            />
+          </div>
+
+          <div class="field">
+            <label for="negativeExtra">Negative追加メモ（任意 / 英語推奨）</label>
+            <input
+              id="negativeExtra"
+              type="text"
+              placeholder="example: cheap costume look, noisy background, harsh shadows"
             />
           </div>
         </div>
