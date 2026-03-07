@@ -1,0 +1,177 @@
+[
+  {
+    "jp": "パリの街並み",
+    "en": "Paris Street",
+    "prompt": [
+      "paris street",
+      "haussmann architecture",
+      "wrought-iron balconies",
+      "stone pavement",
+      "elegant café terrace",
+      "soft morning atmosphere"
+    ]
+  },
+  {
+    "jp": "リスボンの路面電車通り",
+    "en": "Lisbon Tram Street",
+    "prompt": [
+      "lisbon tram street",
+      "yellow vintage tram",
+      "steep cobblestone street",
+      "aged pastel buildings",
+      "authentic city depth"
+    ]
+  },
+  {
+    "jp": "ヴェネツィア運河",
+    "en": "Venice Canal",
+    "prompt": [
+      "venice canal",
+      "stone bridges",
+      "historic canal reflections",
+      "romantic renaissance architecture",
+      "soft golden hour atmosphere"
+    ]
+  },
+  {
+    "jp": "ヴィクトリアンロンドン",
+    "en": "Victorian London",
+    "prompt": [
+      "victorian london street",
+      "foggy street lamps",
+      "stone buildings",
+      "wrought iron fences",
+      "old-world atmosphere"
+    ]
+  },
+  {
+    "jp": "ゴシック大聖堂",
+    "en": "Gothic Cathedral",
+    "prompt": [
+      "gothic cathedral interior",
+      "high arches",
+      "stained glass",
+      "stone floor reflections",
+      "dramatic vertical lines"
+    ]
+  },
+  {
+    "jp": "ヨーロッパ古墓地",
+    "en": "Ancient European Cemetery",
+    "prompt": [
+      "ancient european gothic cemetery",
+      "old stone crosses",
+      "ivy-covered tombstones",
+      "misty atmosphere",
+      "dark romantic mood"
+    ]
+  },
+  {
+    "jp": "中世の城の中庭",
+    "en": "Medieval Castle Courtyard",
+    "prompt": [
+      "medieval castle courtyard",
+      "stone walls",
+      "torch lights",
+      "weathered architecture",
+      "dramatic shadow patterns"
+    ]
+  },
+  {
+    "jp": "京都の神社",
+    "en": "Kyoto Shrine",
+    "prompt": [
+      "kyoto shrine",
+      "red torii gates",
+      "stone path",
+      "wooden shrine structures",
+      "quiet spiritual atmosphere"
+    ]
+  },
+  {
+    "jp": "和室",
+    "en": "Traditional Japanese Room",
+    "prompt": [
+      "traditional japanese room",
+      "tatami floor",
+      "shoji screens",
+      "wooden interior",
+      "quiet minimal aesthetic"
+    ]
+  },
+  {
+    "jp": "日本庭園",
+    "en": "Japanese Garden",
+    "prompt": [
+      "japanese garden",
+      "stone lantern",
+      "maple trees",
+      "koi pond",
+      "natural harmony composition"
+    ]
+  },
+  {
+    "jp": "中国庭園",
+    "en": "Chinese Garden Pavilion",
+    "prompt": [
+      "chinese garden pavilion",
+      "curved roof pavilion",
+      "lotus pond",
+      "ornamental bridge",
+      "elegant classical atmosphere"
+    ]
+  },
+  {
+    "jp": "中国宮殿回廊",
+    "en": "Imperial Palace Corridor",
+    "prompt": [
+      "imperial palace corridor",
+      "red columns",
+      "gold ornament",
+      "traditional tiled roof",
+      "symmetrical perspective"
+    ]
+  },
+  {
+    "jp": "ヴィクトリアン工房",
+    "en": "Victorian Workshop",
+    "prompt": [
+      "victorian workshop",
+      "brass pipes",
+      "wooden workbench",
+      "gear mechanisms",
+      "warm sepia interior atmosphere"
+    ]
+  },
+  {
+    "jp": "蒸気機関室",
+    "en": "Industrial Engine Room",
+    "prompt": [
+      "industrial engine room",
+      "large gears",
+      "steam pipes",
+      "metal catwalk",
+      "dramatic industrial setting"
+    ]
+  },
+  {
+    "jp": "ミニマルファッションスタジオ",
+    "en": "Minimal Fashion Studio",
+    "prompt": [
+      "minimal fashion studio",
+      "clean white backdrop",
+      "softbox setup",
+      "fashion runway mood"
+    ]
+  },
+  {
+    "jp": "ダーク編集スタジオ",
+    "en": "Dark Editorial Studio",
+    "prompt": [
+      "dark editorial studio",
+      "black seamless background",
+      "controlled spotlight",
+      "high-fashion contrast lighting"
+    ]
+  }
+]

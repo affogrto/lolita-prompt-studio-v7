@@ -1,0 +1,78 @@
+{
+  "faceModels": [
+    {
+      "jp": "参照顔ベース（推奨）",
+      "en": "doll-like beauty, porcelain fair skin, clear translucent complexion, soft V-line jaw, small delicate nose, slightly plump glossy lips, large round doe eyes, bright catchlights, long upper eyelashes, soft eyeliner, gentle aegyo-sal, calm and slightly dreamy expression, straight wispy bangs, long wavy hair, ash-brown roots with cool silver-gray ombre toward the ends, silky hair texture"
+    },
+    {
+      "jp": "ドールフェイス",
+      "en": "doll-like beauty, porcelain skin, delicate facial features, large round eyes, soft dreamy elegance"
+    },
+    {
+      "jp": "クラシックモデル",
+      "en": "classic editorial beauty, refined facial balance, elegant nose bridge, softly defined lips, sophisticated fashion model presence"
+    },
+    {
+      "jp": "アリストクラット",
+      "en": "aristocratic beauty, refined facial structure, poised noble elegance, calm dignified gaze"
+    }
+  ],
+  "hairStyles": [
+    { "jp": "ロングウェーブ", "en": "long wavy hair" },
+    { "jp": "ストレートロング", "en": "straight long hair" },
+    { "jp": "ツインテール", "en": "twin-tail hairstyle" },
+    { "jp": "ハーフアップ", "en": "half-up hairstyle" },
+    { "jp": "編み込み", "en": "braided hairstyle" },
+    { "jp": "低めポニーテール", "en": "low ponytail hairstyle" },
+    { "jp": "ゆるい巻き髪", "en": "soft curled hair" },
+    { "jp": "ボブ", "en": "short bob hairstyle" }
+  ],
+  "hairColors": [
+    { "jp": "固定グラデーション（推奨）", "en": "ash-brown roots with cool silver-gray ombre toward the ends" },
+    { "jp": "シルバーグレー", "en": "silver-gray hair" },
+    { "jp": "アッシュブラウン", "en": "ash brown hair" },
+    { "jp": "ジェットブラック", "en": "jet black hair" },
+    { "jp": "ブロンド", "en": "blonde hair" },
+    { "jp": "ラベンダー", "en": "lavender hair" },
+    { "jp": "パステルピンク", "en": "pastel pink hair" },
+    { "jp": "ミントグリーン", "en": "mint green hair" }
+  ],
+  "expressions": [
+    { "jp": "柔らかい微笑み", "en": "soft gentle smile" },
+    { "jp": "優しい笑顔", "en": "warm soft smile" },
+    { "jp": "クール", "en": "cool calm expression" },
+    { "jp": "無表情", "en": "neutral expression" },
+    { "jp": "少し照れ", "en": "slightly shy expression" },
+    { "jp": "ウインク", "en": "subtle wink" },
+    { "jp": "夢見る表情", "en": "dreamy expression" },
+    { "jp": "自信ある視線", "en": "confident gaze" }
+  ],
+  "eyeStyles": [
+    { "jp": "大きなドールアイ", "en": "large doll-like eyes" },
+    { "jp": "優しい丸目", "en": "soft round eyes" },
+    { "jp": "クラシックアーモンド", "en": "almond-shaped eyes" },
+    { "jp": "少しミステリアス", "en": "slightly mysterious gaze" },
+    { "jp": "透明感ブラウンアイ", "en": "clear bright brown eyes" }
+  ],
+  "makeup": [
+    { "jp": "ナチュラル", "en": "natural makeup" },
+    { "jp": "ドーリーメイク", "en": "doll-like makeup" },
+    { "jp": "ゴシックメイク", "en": "soft gothic makeup" },
+    { "jp": "ソフトパステル", "en": "soft pastel makeup" },
+    { "jp": "ヴィクトリアン", "en": "victorian-inspired makeup" }
+  ],
+  "skinTones": [
+    { "jp": "陶器肌", "en": "porcelain skin" },
+    { "jp": "透明感色白", "en": "fair translucent skin" },
+    { "jp": "ナチュラル", "en": "natural skin tone" },
+    { "jp": "健康的", "en": "healthy natural skin tone" }
+  ],
+  "vibes": [
+    { "jp": "ドーリー", "en": "doll-like charm" },
+    { "jp": "優雅", "en": "graceful presence" },
+    { "jp": "ロイヤル", "en": "royal elegance" },
+    { "jp": "ミステリアス", "en": "mysterious aura" },
+    { "jp": "可愛い", "en": "cute refined sweetness" },
+    { "jp": "ダーク", "en": "dark gothic aura" }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "defaults": {
+    "pose": "auto",
+    "lightingMode": "auto",
+    "colorMode": "auto",
+    "faceLock": "on",
+    "hairLock": "on"
+  },
+  "uiOptions": {
+    "lightingModes": [
+      { "jp": "自動", "en": "auto" },
+      { "jp": "手動", "en": "manual" }
+    ],
+    "colorModes": [
+      { "jp": "自動", "en": "auto" },
+      { "jp": "手動", "en": "manual" }
+    ],
+    "lockModes": [
+      { "jp": "ON", "en": "on" },
+      { "jp": "OFF", "en": "off" }
+    ]
+  },
+  "fallbacks": {
+    "pose": "runway stance",
+    "lighting": "Softbox Fashion Lighting",
+    "color": "Luxury Neutral Editorial"
+  },
+  "promptBlocks": {
+    "quality": [
+      "(masterpiece)",
+      "best quality",
+      "photorealistic",
+      "ultra-detailed fashion image"
+    ],
+    "magazineAuthority": [
+      "high-fashion editorial photography",
+      "luxury fashion magazine authority",
+      "museum-grade garment presentation"
+    ],
+    "artDirection": [
+      "always preserve lolita silhouette first",
+      "always preserve petticoat volume and structured waistline",
+      "always preserve readable lace, frill, and textile detail",
+      "location must support outfit readability, never overpower the garment",
+      "lighting must enhance fabric visibility, not flatten it",
+      "color grading must preserve natural skin and black fabric texture"
+    ],
+    "modelPresence": [
+      "full-body fashion portrait",
+      "centered fashion subject",
+      "poised editorial model presence"
+    ],
+    "editorialFinish": [
+      "editorial finish",
+      "clean premium print polish",
+      "natural skin rendering",
+      "fabric texture clarity preserved"
+    ]
+  },
+  "autoMappings": {
+    "poseByStyle": {
+      "Gothic": "runway stance",
+      "Sweet": "hands softly holding skirt",
+      "Classic": "hands softly holding skirt",
+      "Wa": "looking back over shoulder",
+      "Chinese": "runway stance",
+      "Steampunk": "walking pose",
+      "Military": "runway stance",
+      "Mix": "runway stance"
+    },
+    "lightingByScene": {
+      "Paris Street": "Soft Morning Editorial Light",
+      "Lisbon Tram Street": "Golden Hour Fashion Light",
+      "Venice Canal": "Golden Hour Fashion Light",
+      "Victorian London": "Soft Morning Editorial Light",
+      "Gothic Cathedral": "Cathedral Stained Glass Light",
+      "Ancient European Cemetery": "Moonlight Gothic Lighting",
+      "Medieval Castle Courtyard": "Candlelight Gothic Mood",
+      "Kyoto Shrine": "Morning Shrine Light",
+      "Traditional Japanese Room": "Paper Lantern Light",
+      "Japanese Garden": "Soft Garden Light",
+      "Chinese Garden Pavilion": "Lantern Festival Glow",
+      "Imperial Palace Corridor": "Imperial Palace Sunlight",
+      "Victorian Workshop": "Warm Workshop Light",
+      "Industrial Engine Room": "Steam Engine Dramatic Light",
+      "Minimal Fashion Studio": "Softbox Fashion Lighting",
+      "Dark Editorial Studio": "High Fashion Spotlight"
+    },
+    "colorByStyle": {
+      "Gothic": "Moonlight Gothic Grade",
+      "Sweet": "Soft Pastel Grade",
+      "Classic": "Warm Editorial Grade",
+      "Chinese": "Imperial Red Gold Grade",
+      "Steampunk": "Sepia Vintage Grade",
+      "Mix": "Luxury Neutral Editorial"
+    },
+    "colorByStyleScene": {
+      "Wa": {
+        "Kyoto Shrine": "Soft Washi Tone",
+        "Japanese Garden": "Natural Indigo Grade"
+      }
+    }
+  },
+  "locks": {
+    "face": {
+      "on": [
+        "large round brown eyes",
+        "soft dreamy expression",
+        "straight wispy bangs",
+        "clear translucent skin",
+        "porcelain-like but natural skin texture",
+        "doll-like charm",
+        "refined facial balance"
+      ],
+      "off": [
+        "refined editorial beauty",
+        "natural makeup",
+        "balanced facial features"
+      ]
+    },
+    "hair": {
+      "on": [
+        "long softly wavy hair",
+        "ash-brown roots with cool silver-gray ombre ends",
+        "no hairstyle change",
+        "no hair color change"
+      ],
+      "off": [
+        "style-consistent elegant hairstyle"
+      ]
+    }
+  },
+  "negativePresets": {
+    "global": [
+      "low quality",
+      "blurry",
+      "lowres",
+      "jpeg artifacts",
+      "watermark",
+      "text",
+      "logo",
+      "frame",
+      "bad anatomy",
+      "distorted body",
+      "distorted face",
+      "asymmetrical eyes",
+      "cross-eye",
+      "extra limbs",
+      "extra fingers",
+      "deformed hands",
+      "unnatural proportions",
+      "plastic shine",
+      "cheap synthetic texture",
+      "waxy skin",
+      "bodycon silhouette",
+      "tight mini dress",
+      "modern casual wear",
+      "sportswear",
+      "jeans",
+      "t-shirt",
+      "sneakers",
+      "lingerie exposure",
+      "fetish elements",
+      "bondage",
+      "excessive cleavage",
+      "overly sexualized styling"
+    ],
+    "styles": {
+      "Gothic": [
+        "pastel candy styling",
+        "bright kawaii palette",
+        "childish sweet motifs",
+        "toy-like props"
+      ],
+      "Sweet": [
+        "dark funeral mood",
+        "horror styling",
+        "heavy gothic cathedral darkness",
+        "aggressive black dominance"
+      ],
+      "Classic": [
+        "heavy gothic darkness",
+        "funeral mood",
+        "horror styling",
+        "aggressive black dominance",
+        "pastel candy overload",
+        "childish kawaii motifs",
+        "toy-like props",
+        "neon signs",
+        "cyberpunk",
+        "futuristic city",
+        "sci-fi armor",
+        "steampunk goggles",
+        "gears",
+        "full kimono",
+        "shrine maiden costume",
+        "mandarin collar",
+        "frog buttons",
+        "military epaulettes",
+        "sporty casual wear"
+      ],
+      "Wa": [
+        "full kimono",
+        "straight kimono silhouette",
+        "authentic shrine maiden costume",
+        "hakama",
+        "furisode",
+        "cosplay",
+        "tourist costume feel",
+        "mandarin collar",
+        "frog buttons",
+        "military epaulettes",
+        "military insignia",
+        "steampunk goggles",
+        "gears",
+        "cyberpunk",
+        "neon signs",
+        "futuristic city",
+        "sci-fi armor"
+      ],
+      "Chinese": [
+        "full kimono",
+        "shrine maiden styling",
+        "military uniform details",
+        "steampunk goggles",
+        "gears",
+        "cyberpunk",
+        "neon signs",
+        "futuristic city"
+      ],
+      "Steampunk": [
+        "kimono silhouette",
+        "shrine maiden costume",
+        "mandarin collar",
+        "frog buttons",
+        "pastel sweet overload",
+        "candy kawaii styling",
+        "cyberpunk neon sci-fi armor"
+      ],
+      "Military": [
+        "full kimono",
+        "shrine maiden styling",
+        "mandarin collar",
+        "frog buttons",
+        "steampunk goggles",
+        "gears",
+        "candy kawaii palette",
+        "cyberpunk neon city"
+      ],
+      "Mix": [
+        "genre collision",
+        "random unrelated motifs",
+        "silhouette collapse",
+        "costume-like chaos"
+      ]
+    },
+    "legacyStyles": {}
+  },
+  "styleAccessories": {
+    "Classic": [
+      "lace headbow",
+      "classic bonnet",
+      "cameo brooch",
+      "lace gloves",
+      "pearl accessories",
+      "vintage handbag"
+    ],
+    "Wa": [
+      "floral kanzashi-inspired hair ornament",
+      "ribbon headdress with wagara detail",
+      "obi bow back detail",
+      "subtle shrine-inspired tassel accessory"
+    ]
+  },
+  "styleNotes": {
+    "Classic": {
+      "guidance": "prioritize classic lolita fashion over authentic historical costume",
+      "requiredPhrases": [
+        "classic lolita fashion",
+        "elegant classical lolita dress",
+        "refined modest styling",
+        "vintage-inspired elegance",
+        "british aristocratic mood",
+        "bell-shaped petticoat silhouette",
+        "refined garment structure",
+        "lace trim",
+        "ribbon details",
+        "puff sleeves"
+      ],
+      "description": "上品で落ち着いたクラシカルロリータ。英国貴族風、アンティーク、ティータイム、レトロチェック、上質なレースやリボンと相性がよく、Sweet より控えめで Gothic より柔らかい方向です。historical costume そのものではなく classic lolita fashion を優先します。",
+      "recommendedColors": [
+        "ivory",
+        "cream",
+        "beige",
+        "dusty rose",
+        "burgundy",
+        "antique brown",
+        "muted navy",
+        "forest green"
+      ],
+      "recommendedMotifs": [
+        "subtle floral jacquard",
+        "antique clock motif",
+        "vintage frame motif",
+        "refined check pattern",
+        "tea-time motif"
+      ],
+      "compatibleLighting": [
+        "Soft Morning Editorial Light",
+        "Golden Hour Fashion Light",
+        "Softbox Fashion Lighting",
+        "Warm Editorial Light"
+      ]
+    },
+    "Wa": {
+      "guidance": "prioritize japanese-inspired lolita fashion over authentic traditional costume",
+      "requiredPhrases": [
+        "japanese-inspired lolita fashion",
+        "obi-like waist styling",
+        "wagara pattern details",
+        "lace trim",
+        "bell-shaped petticoat silhouette",
+        "structured waistline",
+        "modest styling"
+      ],
+      "description": "Wa style should prioritize japanese-inspired lolita fashion and avoid authentic kimono or shrine costume outcomes."
+    },
+    "Mix": {
+      "guidance": "keep one anchor style at 70% and secondary style at 30%",
+      "requiredPhrases": [
+        "keep one anchor style at 70% and secondary style at 30%"
+      ],
+      "anchorCandidates": [
+        "Gothic",
+        "Sweet",
+        "Classic",
+        "Wa",
+        "Chinese",
+        "Steampunk",
+        "Military"
+      ],
+      "accentCandidates": [
+        "Sweet",
+        "Classic",
+        "Gothic",
+        "Wa",
+        "Chinese",
+        "Steampunk",
+        "Military"
+      ]
+    }
+  }
+}

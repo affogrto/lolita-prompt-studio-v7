@@ -1,0 +1,37 @@
+[
+  {
+    "jp": "自動",
+    "en": "auto",
+    "prompt": ["auto"]
+  },
+  {
+    "jp": "ランウェイ立ち",
+    "en": "runway stance",
+    "prompt": ["runway stance"]
+  },
+  {
+    "jp": "歩きポーズ",
+    "en": "walking pose",
+    "prompt": ["walking pose"]
+  },
+  {
+    "jp": "振り向きポーズ",
+    "en": "looking back over shoulder",
+    "prompt": ["looking back over shoulder"]
+  },
+  {
+    "jp": "スカートを軽く持つ",
+    "en": "hands softly holding skirt",
+    "prompt": ["hands softly holding skirt"]
+  },
+  {
+    "jp": "着座エレガント",
+    "en": "seated elegant pose",
+    "prompt": ["seated elegant pose"]
+  },
+  {
+    "jp": "神社の段差ポーズ",
+    "en": "shrine-step pose",
+    "prompt": ["shrine-step pose"]
+  }
+]

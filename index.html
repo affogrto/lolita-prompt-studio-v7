@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Lolita Prompt Studio V6</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="header-inner">
+        <div>
+          <p class="eyebrow">Gothic Prompt Engine</p>
+          <h1>Lolita Prompt Studio V6</h1>
+          <p class="subtitle">日本語で選択 → 英語でPrompt生成</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <section class="panel panel-left">
+        <div class="panel-block">
+          <h2>基本設定</h2>
+
+          <div class="form-grid grid-2">
+            <div class="field">
+              <label for="ai">生成AI</label>
+              <select id="ai"></select>
+            </div>
+
+            <div class="field">
+              <label for="style">スタイル</label>
+              <select id="style"></select>
+            </div>
+          </div>
+
+          <div class="form-grid grid-2">
+            <div class="field">
+              <label for="subcategory">サブカテゴリー</label>
+              <select id="subcategory"></select>
+            </div>
+
+            <div class="field">
+              <label for="mood">ムード</label>
+              <select id="mood"></select>
+            </div>
+          </div>
+
+          <p id="styleDescription" class="style-description">スタイルを選ぶと説明が表示されます。</p>
+
+          <div class="form-grid grid-3">
+            <div class="field">
+              <label for="scene">撮影ロケーション</label>
+              <select id="scene"></select>
+            </div>
+
+            <div class="field">
+              <label for="camera">カメラ構図</label>
+              <select id="camera"></select>
+            </div>
+
+            <div class="field">
+              <label for="pose">ポーズ</label>
+              <select id="pose"></select>
+            </div>
+          </div>
+
+          <div class="form-grid grid-2">
+            <div class="field-stack">
+              <div class="field">
+                <label for="lighting">ライティング</label>
+                <select id="lighting"></select>
+              </div>
+
+              <div class="field conditional-field" id="lightingManualField" hidden>
+                <label for="lightingManual">ライティング詳細</label>
+                <select id="lightingManual"></select>
+              </div>
+            </div>
+
+            <div class="field-stack">
+              <div class="field">
+                <label for="color">カラーグレード</label>
+                <select id="color"></select>
+              </div>
+
+              <div class="field conditional-field" id="colorManualField" hidden>
+                <label for="colorManual">カラー詳細</label>
+                <select id="colorManual"></select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-block">
+          <h2>人物設定 / Character Builder</h2>
+
+          <div class="form-grid grid-2">
+            <div class="field">
+              <label for="faceLock">顔固定</label>
+              <select id="faceLock"></select>
+            </div>
+
+            <div class="field">
+              <label for="hairLock">髪固定</label>
+              <select id="hairLock"></select>
+            </div>
+          </div>
+
+          <div class="form-grid grid-2">
+            <div class="field">
+              <label for="faceModel">顔モデル</label>
+              <select id="faceModel"></select>
+            </div>
+
+            <div class="field">
+              <label for="hairStyle">髪型</label>
+              <select id="hairStyle"></select>
+            </div>
+          </div>
+
+          <div class="form-grid grid-2">
+            <div class="field">
+              <label for="hairColor">髪色</label>
+              <select id="hairColor"></select>
+            </div>
+
+            <div class="field">
+              <label for="expression">表情</label>
+              <select id="expression"></select>
+            </div>
+          </div>
+
+          <div class="form-grid grid-2">
+            <div class="field">
+              <label for="eyeStyle">瞳</label>
+              <select id="eyeStyle"></select>
+            </div>
+
+            <div class="field">
+              <label for="makeup">メイク</label>
+              <select id="makeup"></select>
+            </div>
+          </div>
+
+          <div class="form-grid grid-2">
+            <div class="field">
+              <label for="skinTone">肌</label>
+              <select id="skinTone"></select>
+            </div>
+
+            <div class="field">
+              <label for="vibe">雰囲気</label>
+              <select id="vibe"></select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="characterExtra">人物追加メモ（任意 / 英語推奨）</label>
+            <input
+              id="characterExtra"
+              type="text"
+              placeholder="example: subtle wink, soft catchlight, refined elegance"
+            />
+          </div>
+        </div>
+
+        <div class="panel-block">
+          <h2>重み付け / Weight System</h2>
+
+          <div class="range-field">
+            <div class="range-label-row">
+              <label for="silhouetteWeight">シルエット強度</label>
+              <span id="silhouetteWeightValue">1.30</span>
+            </div>
+            <input
+              id="silhouetteWeight"
+              type="range"
+              min="1"
+              max="1.6"
+              step="0.05"
+              value="1.30"
+            />
+          </div>
+
+          <div class="range-field">
+            <div class="range-label-row">
+              <label for="fabricWeight">布・レース強度</label>
+              <span id="fabricWeightValue">1.20</span>
+            </div>
+            <input
+              id="fabricWeight"
+              type="range"
+              min="1"
+              max="1.5"
+              step="0.05"
+              value="1.20"
+            />
+          </div>
+
+          <div class="range-field">
+            <div class="range-label-row">
+              <label for="sceneWeight">背景強度</label>
+              <span id="sceneWeightValue">1.10</span>
+            </div>
+            <input
+              id="sceneWeight"
+              type="range"
+              min="1"
+              max="1.5"
+              step="0.05"
+              value="1.10"
+            />
+          </div>
+
+          <div class="range-field">
+            <div class="range-label-row">
+              <label for="characterWeight">人物特徴強度</label>
+              <span id="characterWeightValue">1.20</span>
+            </div>
+            <input
+              id="characterWeight"
+              type="range"
+              min="1"
+              max="1.5"
+              step="0.05"
+              value="1.20"
+            />
+          </div>
+        </div>
+
+        <div class="button-grid">
+          <button id="generateBtn" type="button">Prompt生成</button>
+          <button id="randomLookBtn" type="button" class="secondary">Random Look</button>
+          <button id="randomCharacterBtn" type="button" class="secondary">Random Character</button>
+        </div>
+      </section>
+
+      <section class="panel panel-right">
+        <div class="panel-block">
+          <h2>Character Preview</h2>
+          <div id="characterPreview" class="character-preview">未生成</div>
+          <div id="previewChips" class="chip-list"></div>
+
+          <div class="resolved-grid">
+            <div class="resolved-card">
+              <p class="resolved-label">解決ポーズ</p>
+              <p id="resolvedPose" class="resolved-value">未設定</p>
+            </div>
+
+            <div class="resolved-card">
+              <p class="resolved-label">解決ライティング</p>
+              <p id="resolvedLighting" class="resolved-value">未設定</p>
+            </div>
+
+            <div class="resolved-card">
+              <p class="resolved-label">解決カラー</p>
+              <p id="resolvedColor" class="resolved-value">未設定</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-block">
+          <h2>Positive Prompt</h2>
+          <textarea id="positive" spellcheck="false"></textarea>
+        </div>
+
+        <div class="panel-block">
+          <h2>Negative Prompt</h2>
+          <textarea id="negative" spellcheck="false"></textarea>
+        </div>
+
+        <div class="button-grid">
+          <button id="copyPromptBtn" type="button">コピー</button>
+          <button id="copyPositiveBtn" type="button" class="secondary">Positiveのみ</button>
+          <button id="copyNegativeBtn" type="button" class="secondary">Negativeのみ</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

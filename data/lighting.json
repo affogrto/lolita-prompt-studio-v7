@@ -1,0 +1,165 @@
+[
+  {
+    "jp": "柔らかい朝のファッション光",
+    "en": "Soft Morning Editorial Light",
+    "prompt": [
+      "soft morning editorial light",
+      "soft directional sunlight",
+      "gentle shadows",
+      "natural skin tones",
+      "clean fashion magazine mood"
+    ]
+  },
+  {
+    "jp": "ゴールデンアワー光",
+    "en": "Golden Hour Fashion Light",
+    "prompt": [
+      "golden hour fashion light",
+      "warm low-angle sunlight",
+      "soft rim light on hair",
+      "cinematic glow",
+      "luxury travel editorial mood"
+    ]
+  },
+  {
+    "jp": "明るいハイキー照明",
+    "en": "Bright High-Key Editorial",
+    "prompt": [
+      "bright high-key editorial lighting",
+      "clean soft illumination",
+      "minimal shadows",
+      "bright elegant fashion campaign look"
+    ]
+  },
+  {
+    "jp": "月光ゴシックライティング",
+    "en": "Moonlight Gothic Lighting",
+    "prompt": [
+      "moonlight gothic lighting",
+      "cool blue-toned shadows",
+      "soft low-key illumination",
+      "dramatic yet elegant mood",
+      "black fabric detail preserved"
+    ]
+  },
+  {
+    "jp": "ステンドグラス光",
+    "en": "Cathedral Stained Glass Light",
+    "prompt": [
+      "cathedral stained glass light",
+      "colored light beams",
+      "soft diffused illumination",
+      "dramatic architectural atmosphere"
+    ]
+  },
+  {
+    "jp": "キャンドルライト雰囲気",
+    "en": "Candlelight Gothic Mood",
+    "prompt": [
+      "candlelight gothic mood",
+      "warm flickering highlights",
+      "deep soft shadows",
+      "dark romantic atmosphere"
+    ]
+  },
+  {
+    "jp": "庭園の柔らかい自然光",
+    "en": "Soft Garden Light",
+    "prompt": [
+      "soft garden light",
+      "diffused natural light through trees",
+      "gentle highlights on fabric",
+      "calm serene atmosphere"
+    ]
+  },
+  {
+    "jp": "提灯の暖かい光",
+    "en": "Paper Lantern Light",
+    "prompt": [
+      "paper lantern light",
+      "warm soft lantern glow",
+      "balanced shadow softness",
+      "traditional evening ambience"
+    ]
+  },
+  {
+    "jp": "神社の朝光",
+    "en": "Morning Shrine Light",
+    "prompt": [
+      "morning shrine light",
+      "cool clean morning sunlight",
+      "soft directional highlights",
+      "peaceful natural mood"
+    ]
+  },
+  {
+    "jp": "ランタン祭り光",
+    "en": "Lantern Festival Glow",
+    "prompt": [
+      "lantern festival glow",
+      "warm golden lantern illumination",
+      "soft ambient glow",
+      "luxurious festive atmosphere"
+    ]
+  },
+  {
+    "jp": "宮殿中庭の太陽光",
+    "en": "Imperial Palace Sunlight",
+    "prompt": [
+      "imperial palace sunlight",
+      "soft courtyard sunlight",
+      "balanced shadow contrast",
+      "refined royal atmosphere"
+    ]
+  },
+  {
+    "jp": "工房の暖色光",
+    "en": "Warm Workshop Light",
+    "prompt": [
+      "warm workshop light",
+      "industrial warm lighting",
+      "soft shadows around machinery",
+      "brass highlights visible"
+    ]
+  },
+  {
+    "jp": "蒸気機関ドラマ光",
+    "en": "Steam Engine Dramatic Light",
+    "prompt": [
+      "steam engine dramatic light",
+      "strong directional beams",
+      "light through steam particles",
+      "dramatic mechanical atmosphere"
+    ]
+  },
+  {
+    "jp": "セピア工業光",
+    "en": "Sepia Industrial Light",
+    "prompt": [
+      "sepia industrial light",
+      "warm sepia tone illumination",
+      "vintage mechanical mood",
+      "soft shadow transitions"
+    ]
+  },
+  {
+    "jp": "ソフトボックス照明",
+    "en": "Softbox Fashion Lighting",
+    "prompt": [
+      "softbox fashion lighting",
+      "large diffused key light",
+      "soft fill light",
+      "clean magazine editorial look"
+    ]
+  },
+  {
+    "jp": "ハイファッションスポットライト",
+    "en": "High Fashion Spotlight",
+    "prompt": [
+      "high fashion spotlight",
+      "controlled spotlight on subject",
+      "dark background separation",
+      "luxury campaign aesthetic"
+    ]
+  }
+]

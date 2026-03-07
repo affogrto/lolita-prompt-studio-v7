@@ -1,0 +1,67 @@
+{
+  "Gothic": [
+    { "jp": "姫袖ゴシックロリータ", "en": "hime sleeve gothic lolita" },
+    { "jp": "修道女風ゴシック", "en": "nun inspired gothic lolita" },
+    { "jp": "軍服ゴシックロリータ", "en": "military gothic lolita" },
+    { "jp": "ヴィクトリアンゴシック", "en": "victorian gothic lolita" },
+    { "jp": "ゴシックパンクロリータ", "en": "gothic punk lolita" },
+    { "jp": "ダークアリストクラット", "en": "dark aristocrat gothic lolita" }
+  ],
+  "Sweet": [
+    { "jp": "プリンセス甘ロリ", "en": "princess sweet lolita" },
+    { "jp": "王道ドーリー甘ロリ", "en": "classic dolly sweet lolita" },
+    { "jp": "ギンガム甘ロリ", "en": "gingham sweet lolita" },
+    { "jp": "フェアリー甘ロリ", "en": "fairy sweet lolita" },
+    { "jp": "冬甘ロリ", "en": "winter sweet lolita" },
+    { "jp": "パーティ甘ロリ", "en": "party sweet lolita" }
+  ],
+  "Classic": [
+    { "jp": "ティータイムクラシック", "en": "tea-time classic lolita" },
+    { "jp": "アンティーククロック", "en": "antique clock classic lolita" },
+    { "jp": "英国貴婦人風", "en": "british aristocratic classic lolita" },
+    { "jp": "レトロチェック", "en": "retro check classic lolita" },
+    { "jp": "カメオブローチ", "en": "cameo brooch classic lolita" },
+    { "jp": "テディベアモチーフ", "en": "teddy bear motif classic lolita" }
+  ],
+  "Wa": [
+    { "jp": "和風アリス", "en": "wa-inspired alice lolita" },
+    { "jp": "着物ワンピ型", "en": "kimono-inspired dress detail lolita" },
+    { "jp": "袴ミックス", "en": "pleated wa-inspired lolita layering" },
+    { "jp": "狐モチーフ", "en": "fox motif wa-inspired lolita" },
+    { "jp": "巫女風", "en": "shrine-inspired wa lolita accents" },
+    { "jp": "和ゴス", "en": "wa gothic lolita" }
+  ],
+  "Chinese": [
+    { "jp": "王道チャイナ", "en": "classic chinese lolita" },
+    { "jp": "仙女舞姫", "en": "celestial chinese lolita" },
+    { "jp": "刺繍重視", "en": "embroidered chinese lolita" },
+    { "jp": "モダン中華ミックス", "en": "modern chinese fusion lolita" },
+    { "jp": "パステル華ロリ", "en": "pastel chinese lolita" },
+    { "jp": "節句イメージ", "en": "festival chinese lolita" }
+  ],
+  "Steampunk": [
+    { "jp": "英国探偵風", "en": "victorian detective steampunk lolita" },
+    { "jp": "英国少年風", "en": "boyish steampunk lolita" },
+    { "jp": "西部劇風", "en": "western steampunk lolita" },
+    { "jp": "重工業ギア強め", "en": "heavy gear steampunk lolita" },
+    { "jp": "貴族スチーム", "en": "aristocratic steampunk lolita" },
+    { "jp": "ジャケット主役", "en": "steampunk jacket focus lolita" }
+  ],
+  "Military": [
+    { "jp": "士官制服", "en": "officer uniform lolita" },
+    { "jp": "ポリス制服", "en": "police uniform lolita" },
+    { "jp": "アーミー系", "en": "army style lolita" },
+    { "jp": "ケープ軍服", "en": "cape military lolita" },
+    { "jp": "チェーン装飾", "en": "chain decorated military lolita" },
+    { "jp": "貴族軍服", "en": "aristocratic military lolita" },
+    { "jp": "海軍制服", "en": "navy uniform lolita" },
+    { "jp": "空軍制服", "en": "air force lolita" },
+    { "jp": "近衛兵風", "en": "royal guard lolita" }
+  ],
+  "Mix": [
+    { "jp": "ゴス×和", "en": "gothic wa fusion lolita" },
+    { "jp": "甘×和", "en": "sweet wa fusion lolita" },
+    { "jp": "中華×ゴス", "en": "chinese gothic fusion lolita" },
+    { "jp": "スチーム×軍服", "en": "steampunk military fusion lolita" }
+  ]
+}

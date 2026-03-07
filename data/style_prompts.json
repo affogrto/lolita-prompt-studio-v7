@@ -1,0 +1,88 @@
+{
+  "Gothic": [
+    "gothic lolita fashion",
+    "black lace dress",
+    "victorian-inspired elegance",
+    "bell-shaped petticoat silhouette",
+    "structured waistline",
+    "modest refined styling",
+    "black and ivory palette"
+  ],
+  "Sweet": [
+    "sweet lolita fashion",
+    "pastel lace dress",
+    "bows and frills",
+    "doll-like sweetness",
+    "bell-shaped petticoat silhouette",
+    "structured waistline",
+    "modest refined styling",
+    "pastel pink and cream palette"
+  ],
+  "Classic": [
+    "classic lolita fashion",
+    "elegant classical lolita dress",
+    "refined modest styling",
+    "vintage-inspired elegance",
+    "british aristocratic mood",
+    "bell-shaped petticoat silhouette",
+    "refined garment structure",
+    "lace trim",
+    "ribbon details",
+    "puff sleeves",
+    "high neckline blouse layering",
+    "antique-inspired buttons",
+    "cameo brooch detail",
+    "waist ribbon",
+    "tea-time elegance",
+    "subtle floral jacquard",
+    "refined check pattern",
+    "calm sophisticated palette"
+  ],
+  "Wa": [
+    "japanese-inspired lolita fashion",
+    "obi-like waist styling",
+    "wagara pattern details",
+    "lace trim",
+    "bell-shaped petticoat silhouette",
+    "structured waistline",
+    "modest styling",
+    "kimono-inspired sleeve accents only",
+    "elegant Japanese-inspired fashion aesthetic"
+  ],
+  "Chinese": [
+    "chinese lolita fashion",
+    "mandarin collar accents",
+    "embroidered brocade details",
+    "bell-shaped petticoat silhouette",
+    "structured waistline",
+    "modest styling",
+    "refined traditional elegance"
+  ],
+  "Steampunk": [
+    "steampunk lolita fashion",
+    "victorian-inspired corset dress",
+    "layered bustle silhouette",
+    "brass and leather accents",
+    "lace details",
+    "sepia and brown palette",
+    "lace-up boots"
+  ],
+  "Military": [
+    "military lolita fashion",
+    "structured officer-inspired uniform dress",
+    "brass buttons",
+    "epaulettes",
+    "bell-shaped petticoat silhouette",
+    "structured waistline",
+    "refined tailoring",
+    "modest styling"
+  ],
+  "Mix": [
+    "mix lolita fashion",
+    "cohesive anchor-style driven fusion design",
+    "bell-shaped petticoat silhouette",
+    "structured waistline",
+    "modest styling",
+    "balanced mixed aesthetic couture"
+  ]
+}

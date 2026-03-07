@@ -1,0 +1,174 @@
+[
+  {
+    "jp": "ラグジュアリーニュートラル",
+    "en": "Luxury Neutral Editorial",
+    "prompt": [
+      "luxury neutral editorial",
+      "balanced neutral tones",
+      "clean skin color",
+      "soft contrast",
+      "premium fashion magazine finish"
+    ]
+  },
+  {
+    "jp": "ウォームエディトリアル",
+    "en": "Warm Editorial Grade",
+    "prompt": [
+      "warm editorial grade",
+      "subtle warm highlights",
+      "golden skin tone",
+      "soft luxury mood",
+      "fashion campaign warmth"
+    ]
+  },
+  {
+    "jp": "クールエディトリアル",
+    "en": "Cool Editorial Grade",
+    "prompt": [
+      "cool editorial grade",
+      "slightly cool shadows",
+      "clean modern editorial atmosphere",
+      "crisp fabric contrast"
+    ]
+  },
+  {
+    "jp": "ムーンライトゴシック",
+    "en": "Moonlight Gothic Grade",
+    "prompt": [
+      "moonlight gothic grade",
+      "cool blue shadows",
+      "deep controlled blacks",
+      "dramatic gothic elegance"
+    ]
+  },
+  {
+    "jp": "ダークベルベット",
+    "en": "Dark Velvet Grade",
+    "prompt": [
+      "dark velvet grade",
+      "rich black depth",
+      "subtle purple undertone",
+      "velvet texture emphasis"
+    ]
+  },
+  {
+    "jp": "アンティークゴシック",
+    "en": "Antique Gothic Grade",
+    "prompt": [
+      "antique gothic grade",
+      "desaturated tones",
+      "old cathedral atmosphere",
+      "dark romantic mood"
+    ]
+  },
+  {
+    "jp": "ソフトパステル",
+    "en": "Soft Pastel Grade",
+    "prompt": [
+      "soft pastel grade",
+      "gentle pastel enhancement",
+      "bright but soft highlights",
+      "clean dreamy tone"
+    ]
+  },
+  {
+    "jp": "キャンディーパステル",
+    "en": "Candy Soft Grade",
+    "prompt": [
+      "candy soft grade",
+      "slightly increased pastel saturation",
+      "soft luminous skin",
+      "cute editorial mood"
+    ]
+  },
+  {
+    "jp": "ミルクティーパステル",
+    "en": "Milk Tea Pastel Grade",
+    "prompt": [
+      "milk tea pastel grade",
+      "creamy whites",
+      "warm pastel softness",
+      "delicate fashion sweetness"
+    ]
+  },
+  {
+    "jp": "ナチュラル藍",
+    "en": "Natural Indigo Grade",
+    "prompt": [
+      "natural indigo grade",
+      "deep indigo shadows",
+      "balanced skin tone",
+      "calm refined palette"
+    ]
+  },
+  {
+    "jp": "和紙トーン",
+    "en": "Soft Washi Tone",
+    "prompt": [
+      "soft washi tone",
+      "muted natural palette",
+      "paper-like softness",
+      "elegant traditional atmosphere"
+    ]
+  },
+  {
+    "jp": "インペリアル赤金",
+    "en": "Imperial Red Gold Grade",
+    "prompt": [
+      "imperial red gold grade",
+      "rich red tones",
+      "gold highlights",
+      "luxurious cultural mood"
+    ]
+  },
+  {
+    "jp": "翡翠シルク",
+    "en": "Silk Jade Tone",
+    "prompt": [
+      "silk jade tone",
+      "jade green accents",
+      "silk texture emphasis",
+      "refined traditional elegance"
+    ]
+  },
+  {
+    "jp": "セピアヴィンテージ",
+    "en": "Sepia Vintage Grade",
+    "prompt": [
+      "sepia vintage grade",
+      "sepia brown tone",
+      "antique brass highlight",
+      "vintage mechanical mood"
+    ]
+  },
+  {
+    "jp": "インダストリアルブロンズ",
+    "en": "Industrial Bronze Grade",
+    "prompt": [
+      "industrial bronze grade",
+      "bronze metallic emphasis",
+      "deep warm shadows",
+      "industrial fashion mood"
+    ]
+  },
+  {
+    "jp": "プレミアムプリント",
+    "en": "Premium Print Grade",
+    "prompt": [
+      "premium print grade",
+      "balanced contrast",
+      "refined highlight roll-off",
+      "high-end print magazine finish"
+    ]
+  },
+  {
+    "jp": "ラグジュアリーキャンペーン",
+    "en": "Luxury Campaign Grade",
+    "prompt": [
+      "luxury campaign grade",
+      "slightly cinematic contrast",
+      "soft skin smoothing",
+      "luxury campaign aesthetic"
+    ]
+  }
+]
