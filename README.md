@@ -25,7 +25,7 @@ GitHub Pages でそのまま公開できます。
 python -m http.server 8000
 
 ブラウザで以下を開きます。
-http://localhost:8000
+(https://affogrto.github.io/lolita-prompt-studio-v7/)
 
 ## GitHub Pages 公開手順
 1. GitHub に新規リポジトリを作成
