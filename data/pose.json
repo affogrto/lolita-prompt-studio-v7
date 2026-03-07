@@ -1,37 +1,466 @@
 [
   {
-    "jp": "自動",
-    "en": "auto",
-    "prompt": ["auto"]
+    "id": "sns_turn_back_walk",
+    "jp": "振り返りウォーク",
+    "en": "dynamic walking fashion pose, looking back over the shoulder, natural movement captured mid-step",
+    "prompt": [
+      "dynamic walking fashion pose",
+      "looking back over the shoulder",
+      "natural movement captured mid-step",
+      "skirt slightly moving with motion",
+      "hair gently flowing",
+      "runway-level presence"
+    ],
+    "category": "viral_core",
+    "camera_hint": [
+      "85mm lens look",
+      "full-body fashion portrait",
+      "vertical composition"
+    ],
+    "sns_hook": "movement + eye contact + story",
+    "virality_score": 10,
+    "silhouette_safety": "high",
+    "recommended_styles": ["Sweet", "Gothic", "Wa", "Chinese", "Mix"],
+    "negative_hint": [
+      "stiff standing pose",
+      "awkward twisted spine",
+      "frozen motion",
+      "chaotic limbs"
+    ]
   },
   {
-    "jp": "ランウェイ立ち",
-    "en": "runway stance",
-    "prompt": ["runway stance"]
+    "id": "sns_skirt_spread_front",
+    "jp": "スカート広げ正面",
+    "en": "front-facing pose, gently holding both sides of the skirt, symmetrical fashion presentation",
+    "prompt": [
+      "front-facing pose",
+      "gently holding both sides of the skirt",
+      "symmetrical fashion presentation",
+      "clear petticoat silhouette",
+      "full outfit readability",
+      "poised editorial elegance"
+    ],
+    "category": "garment_showcase",
+    "camera_hint": [
+      "70mm lens look",
+      "centered fashion composition",
+      "full-body framing"
+    ],
+    "sns_hook": "clear silhouette + instant readability",
+    "virality_score": 8,
+    "silhouette_safety": "very_high",
+    "recommended_styles": ["Sweet", "Gothic", "Wa", "Chinese", "Steampunk", "Mix"],
+    "negative_hint": [
+      "flat skirt",
+      "hidden hemline",
+      "cropped shoes",
+      "asymmetrical arm placement"
+    ]
   },
   {
-    "jp": "歩きポーズ",
-    "en": "walking pose",
-    "prompt": ["walking pose"]
+    "id": "sns_one_hand_skirt_turn",
+    "jp": "片手スカート振り向き",
+    "en": "half-turned pose, one hand lightly lifting the skirt, looking back with soft confidence",
+    "prompt": [
+      "half-turned pose",
+      "one hand lightly lifting the skirt",
+      "looking back with soft confidence",
+      "subtle rotational motion",
+      "skirt hem gently flowing",
+      "editorial storytelling"
+    ],
+    "category": "story_pose",
+    "camera_hint": [
+      "85mm lens look",
+      "three-quarter body emphasis",
+      "vertical framing"
+    ],
+    "sns_hook": "gesture + motion + femininity",
+    "virality_score": 9,
+    "silhouette_safety": "high",
+    "recommended_styles": ["Sweet", "Gothic", "Mix"],
+    "negative_hint": [
+      "overlifted skirt",
+      "excessive exposure",
+      "broken wrist anatomy",
+      "stiff shoulders"
+    ]
   },
   {
-    "jp": "振り向きポーズ",
-    "en": "looking back over shoulder",
-    "prompt": ["looking back over shoulder"]
+    "id": "sns_stair_pause",
+    "jp": "階段で立ち止まり",
+    "en": "paused on a staircase, slight turn of the body, elegant downward flowing skirt line",
+    "prompt": [
+      "paused on a staircase",
+      "slight turn of the body",
+      "elegant downward flowing skirt line",
+      "one hand near the railing",
+      "composed editorial stillness",
+      "cinematic fashion moment"
+    ],
+    "category": "location_pose",
+    "camera_hint": [
+      "50mm lens look",
+      "full-body fashion portrait",
+      "architectural framing"
+    ],
+    "sns_hook": "cinematic setting + graceful line",
+    "virality_score": 8,
+    "silhouette_safety": "medium_high",
+    "recommended_styles": ["Gothic", "Classic", "Wa", "Mix"],
+    "negative_hint": [
+      "busy staircase crowding outfit",
+      "hidden hem",
+      "awkward foot angle",
+      "rigid posture"
+    ]
   },
   {
-    "jp": "スカートを軽く持つ",
-    "en": "hands softly holding skirt",
-    "prompt": ["hands softly holding skirt"]
+    "id": "sns_crosswalk_stride",
+    "jp": "横断歩道ストライド",
+    "en": "long walking stride on a city street, skirt bouncing lightly, confident fashion momentum",
+    "prompt": [
+      "long walking stride on a city street",
+      "skirt bouncing lightly",
+      "confident fashion momentum",
+      "centered moving subject",
+      "street editorial energy",
+      "clean vertical composition"
+    ],
+    "category": "street_editorial",
+    "camera_hint": [
+      "85mm lens look",
+      "full-body vertical shot",
+      "street depth separation"
+    ],
+    "sns_hook": "urban motion + instant stop power",
+    "virality_score": 9,
+    "silhouette_safety": "medium_high",
+    "recommended_styles": ["Sweet", "Mix", "Wa"],
+    "negative_hint": [
+      "traffic clutter",
+      "motion blur on face",
+      "skirt collapse",
+      "cropped legs"
+    ]
   },
   {
-    "jp": "着座エレガント",
-    "en": "seated elegant pose",
-    "prompt": ["seated elegant pose"]
+    "id": "sns_parasol_side_glance",
+    "jp": "パラソル横目線",
+    "en": "side-facing pose with a parasol, subtle glance toward the camera, elegant aristocratic balance",
+    "prompt": [
+      "side-facing pose with a parasol",
+      "subtle glance toward the camera",
+      "elegant aristocratic balance",
+      "controlled hand placement",
+      "refined silhouette readability",
+      "romantic editorial atmosphere"
+    ],
+    "category": "prop_pose",
+    "camera_hint": [
+      "70mm lens look",
+      "full-body portrait",
+      "balanced side composition"
+    ],
+    "sns_hook": "recognizable prop + elegant mystery",
+    "virality_score": 8,
+    "silhouette_safety": "high",
+    "recommended_styles": ["Gothic", "Classic", "Mix"],
+    "negative_hint": [
+      "oversized prop hiding outfit",
+      "umbrella shadow on face",
+      "awkward elbow bend",
+      "cheap cosplay vibe"
+    ]
   },
   {
-    "jp": "神社の段差ポーズ",
-    "en": "shrine-step pose",
-    "prompt": ["shrine-step pose"]
+    "id": "sns_teacup_table_turn",
+    "jp": "ティーテーブル振り向き",
+    "en": "standing beside a tea table, upper body turned toward the camera, soft romantic storytelling",
+    "prompt": [
+      "standing beside a tea table",
+      "upper body turned toward the camera",
+      "soft romantic storytelling",
+      "gentle hand near the table edge",
+      "sweet editorial atmosphere",
+      "clear outfit presentation"
+    ],
+    "category": "narrative_pose",
+    "camera_hint": [
+      "50mm lens look",
+      "three-quarter portrait",
+      "environmental fashion framing"
+    ],
+    "sns_hook": "storybook mood + lifestyle relatability",
+    "virality_score": 7,
+    "silhouette_safety": "medium",
+    "recommended_styles": ["Sweet", "Wa", "Mix"],
+    "negative_hint": [
+      "table blocking dress",
+      "too many props",
+      "flat body angle",
+      "background clutter"
+    ]
+  },
+  {
+    "id": "sns_sit_sideways_chair",
+    "jp": "椅子に横座り",
+    "en": "sideways seated pose on an elegant chair, skirt carefully spread, delicate upper-body posture",
+    "prompt": [
+      "sideways seated pose on an elegant chair",
+      "skirt carefully spread",
+      "delicate upper-body posture",
+      "one hand resting softly",
+      "composed doll-like elegance",
+      "refined seated fashion pose"
+    ],
+    "category": "seated_pose",
+    "camera_hint": [
+      "70mm lens look",
+      "full-body or three-quarter framing",
+      "clean side angle"
+    ],
+    "sns_hook": "doll-like styling + controlled composition",
+    "virality_score": 7,
+    "silhouette_safety": "medium",
+    "recommended_styles": ["Sweet", "Gothic", "Classic"],
+    "negative_hint": [
+      "compressed skirt volume",
+      "hidden shoes",
+      "slouched spine",
+      "oversexualized seated pose"
+    ]
+  },
+  {
+    "id": "sns_garden_spin_freeze",
+    "jp": "ガーデンスピン静止",
+    "en": "mid-spin pose frozen in motion, skirt blooming outward, joyful cinematic fashion energy",
+    "prompt": [
+      "mid-spin pose frozen in motion",
+      "skirt blooming outward",
+      "joyful cinematic fashion energy",
+      "hair lifted by turning motion",
+      "elegant balance in movement",
+      "visual impact through circular silhouette"
+    ],
+    "category": "motion_pose",
+    "camera_hint": [
+      "85mm lens look",
+      "full-body shot",
+      "motion-focused framing"
+    ],
+    "sns_hook": "big skirt shape + motion drama",
+    "virality_score": 9,
+    "silhouette_safety": "medium",
+    "recommended_styles": ["Sweet", "Wa", "Mix"],
+    "negative_hint": [
+      "motion blur",
+      "broken limb geometry",
+      "collapsed petticoat",
+      "messy background"
+    ]
+  },
+  {
+    "id": "sns_window_light_profile",
+    "jp": "窓辺プロフィール",
+    "en": "profile pose near a tall window, soft side light, serene editorial stillness",
+    "prompt": [
+      "profile pose near a tall window",
+      "soft side light",
+      "serene editorial stillness",
+      "hands gently composed",
+      "clean side silhouette",
+      "quiet luxurious atmosphere"
+    ],
+    "category": "light_pose",
+    "camera_hint": [
+      "85mm lens look",
+      "profile framing",
+      "soft depth separation"
+    ],
+    "sns_hook": "light drama + quiet luxury",
+    "virality_score": 7,
+    "silhouette_safety": "high",
+    "recommended_styles": ["Gothic", "Wa", "Chinese", "Classic"],
+    "negative_hint": [
+      "harsh window blowout",
+      "flat side silhouette",
+      "hidden details",
+      "overdark shadows"
+    ]
+  },
+  {
+    "id": "sns_corridor_walk_center",
+    "jp": "回廊センターウォーク",
+    "en": "walking through a symmetrical corridor, centered composition, commanding editorial presence",
+    "prompt": [
+      "walking through a symmetrical corridor",
+      "centered composition",
+      "commanding editorial presence",
+      "strong vertical lines",
+      "balanced stride",
+      "luxury campaign mood"
+    ],
+    "category": "architecture_pose",
+    "camera_hint": [
+      "70mm lens look",
+      "centered vertical framing",
+      "architectural symmetry"
+    ],
+    "sns_hook": "symmetry + authority + depth",
+    "virality_score": 8,
+    "silhouette_safety": "high",
+    "recommended_styles": ["Gothic", "Chinese", "Wa", "Steampunk", "Mix"],
+    "negative_hint": [
+      "background overpowering subject",
+      "tiny subject scale",
+      "perspective distortion",
+      "legs cropped"
+    ]
+  },
+  {
+    "id": "sns_shrine_step_turn",
+    "jp": "神社ステップ振り返り",
+    "en": "one foot on a shrine step, body turning back toward the camera, graceful traditional-inspired motion",
+    "prompt": [
+      "one foot on a shrine step",
+      "body turning back toward the camera",
+      "graceful traditional-inspired motion",
+      "skirt volume preserved in movement",
+      "refined posture",
+      "cultural elegance without cosplay feel"
+    ],
+    "category": "wa_pose",
+    "camera_hint": [
+      "50mm lens look",
+      "full-body environmental portrait",
+      "natural perspective"
+    ],
+    "sns_hook": "cultural mood + motion + elegance",
+    "virality_score": 8,
+    "silhouette_safety": "high",
+    "recommended_styles": ["Wa", "Mix"],
+    "negative_hint": [
+      "full kimono silhouette",
+      "tourist cosplay feeling",
+      "stiff legs",
+      "busy shrine crowd"
+    ]
+  },
+  {
+    "id": "sns_fan_half_cover",
+    "jp": "扇子ハーフカバー",
+    "en": "half-covering the lower face with a folding fan, direct gaze, poised upper-body elegance",
+    "prompt": [
+      "half-covering the lower face with a folding fan",
+      "direct gaze",
+      "poised upper-body elegance",
+      "mysterious expression",
+      "controlled hand gesture",
+      "refined fashion intrigue"
+    ],
+    "category": "face_hook_pose",
+    "camera_hint": [
+      "50mm or 85mm lens look",
+      "three-quarter portrait",
+      "upper-body emphasis with visible skirt silhouette"
+    ],
+    "sns_hook": "mystery + face framing",
+    "virality_score": 8,
+    "silhouette_safety": "medium",
+    "recommended_styles": ["Chinese", "Wa", "Gothic", "Mix"],
+    "negative_hint": [
+      "prop hiding too much face",
+      "cropped outfit",
+      "awkward wrist",
+      "cheap theatrical feel"
+    ]
+  },
+  {
+    "id": "sns_workshop_over_shoulder",
+    "jp": "工房オーバーショルダー",
+    "en": "standing in a workshop, upper body turned over the shoulder, confident crafted-fashion presence",
+    "prompt": [
+      "standing in a workshop",
+      "upper body turned over the shoulder",
+      "confident crafted-fashion presence",
+      "one hand near a belt or accessory detail",
+      "structured pose",
+      "industrial editorial storytelling"
+    ],
+    "category": "steampunk_pose",
+    "camera_hint": [
+      "85mm lens look",
+      "full-body portrait",
+      "detail-aware framing"
+    ],
+    "sns_hook": "detail focus + attitude",
+    "virality_score": 8,
+    "silhouette_safety": "high",
+    "recommended_styles": ["Steampunk", "Mix", "Gothic"],
+    "negative_hint": [
+      "background machinery overpowering outfit",
+      "too much prop clutter",
+      "punk posture",
+      "hard flash cosplay look"
+    ]
+  },
+  {
+    "id": "sns_bench_gaze_down",
+    "jp": "ベンチ伏し目",
+    "en": "seated on a bench with a downward gaze, hands softly arranged, quiet emotional storytelling",
+    "prompt": [
+      "seated on a bench with a downward gaze",
+      "hands softly arranged",
+      "quiet emotional storytelling",
+      "gentle skirt spread",
+      "softly introspective mood",
+      "romantic stillness"
+    ],
+    "category": "emotional_pose",
+    "camera_hint": [
+      "50mm lens look",
+      "three-quarter seated framing",
+      "soft environment context"
+    ],
+    "sns_hook": "emotion + softness + relatability",
+    "virality_score": 7,
+    "silhouette_safety": "medium",
+    "recommended_styles": ["Sweet", "Gothic", "Wa", "Mix"],
+    "negative_hint": [
+      "slouching",
+      "hidden dress volume",
+      "depressed body collapse",
+      "messy hands"
+    ]
+  },
+  {
+    "id": "sns_runway_stop_pose",
+    "jp": "ランウェイ停止ポーズ",
+    "en": "mid-runway stop pose, one foot forward, confident fashion authority, direct camera engagement",
+    "prompt": [
+      "mid-runway stop pose",
+      "one foot forward",
+      "confident fashion authority",
+      "direct camera engagement",
+      "strong silhouette presentation",
+      "cover-worthy editorial impact"
+    ],
+    "category": "authority_pose",
+    "camera_hint": [
+      "70mm lens look",
+      "vertical center composition",
+      "clean runway framing"
+    ],
+    "sns_hook": "confidence + instant readability",
+    "virality_score": 9,
+    "silhouette_safety": "very_high",
+    "recommended_styles": ["Sweet", "Gothic", "Chinese", "Wa", "Steampunk", "Mix"],
+    "negative_hint": [
+      "stiff mannequin pose",
+      "flat skirt",
+      "weak eye line",
+      "cropped shoes"
+    ]
   }
 ]
