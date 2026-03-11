@@ -102,17 +102,17 @@
       "Steampunk": "Sepia Vintage Grade",
       "Mix": "Luxury Neutral Editorial"
     },
-    "colorByStyleScene": {
-"Gothic": {
-"Sunrise Coastline": "Antique Gothic Grade",
-"Seaside Shore": "Moonlight Gothic Grade",
-"Elegant Cafe Terrace": "Dark Velvet Grade",
-"Mountain View Observatory": "Moonlight Gothic Grade",
-"Golden Sunset Horizon": "Antique Gothic Grade",
-"Industrial Night Skyline": "Dark Velvet Grade",
-"Airport Runway": "Cool Editorial Grade",
-"Lush Green Open Plain": "Antique Gothic Grade"
-　　  },
+   "colorByStyleScene": {
+  "Gothic": {
+    "Sunrise Coastline": "Antique Gothic Grade",
+    "Seaside Shore": "Moonlight Gothic Grade",
+    "Elegant Cafe Terrace": "Dark Velvet Grade",
+    "Mountain View Observatory": "Moonlight Gothic Grade",
+    "Golden Sunset Horizon": "Antique Gothic Grade",
+    "Industrial Night Skyline": "Dark Velvet Grade",
+    "Airport Runway": "Cool Editorial Grade",
+    "Lush Green Open Plain": "Antique Gothic Grade"
+  },
   "Sweet": {
     "Sunrise Coastline": "Soft Pastel Grade",
     "Seaside Shore": "Milk Tea Pastel Grade",
