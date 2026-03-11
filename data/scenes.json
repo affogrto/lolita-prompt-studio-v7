@@ -1,54 +1,50 @@
 [
   {
-    "jp": "パリの街並み",
+    "jp": "パリのストリート",
     "en": "Paris Street",
     "prompt": [
-      "paris street",
       "haussmann architecture",
       "wrought-iron balconies",
       "stone pavement",
       "elegant café terrace",
-      "soft morning atmosphere"
+      "soft morning sunlight"
     ]
   },
   {
     "jp": "リスボンの路面電車通り",
     "en": "Lisbon Tram Street",
     "prompt": [
-      "lisbon tram street",
       "yellow vintage tram",
       "steep cobblestone street",
       "aged pastel buildings",
-      "authentic city depth"
+      "overhead tram cables",
+      "warm mediterranean sunlight"
     ]
   },
   {
-    "jp": "ヴェネツィア運河",
+    "jp": "ヴェネツィアの運河",
     "en": "Venice Canal",
     "prompt": [
-      "venice canal",
       "stone bridges",
       "historic canal reflections",
       "romantic renaissance architecture",
-      "soft golden hour atmosphere"
+      "soft golden hour lighting"
     ]
   },
   {
     "jp": "ヴィクトリアンロンドン",
     "en": "Victorian London",
     "prompt": [
-      "victorian london street",
       "foggy street lamps",
       "stone buildings",
       "wrought iron fences",
-      "old-world atmosphere"
+      "horse carriage atmosphere"
     ]
   },
   {
     "jp": "ゴシック大聖堂",
     "en": "Gothic Cathedral",
     "prompt": [
-      "gothic cathedral interior",
       "high arches",
       "stained glass",
       "stone floor reflections",
@@ -56,10 +52,9 @@
     ]
   },
   {
-    "jp": "ヨーロッパ古墓地",
+    "jp": "古いヨーロッパ墓地",
     "en": "Ancient European Cemetery",
     "prompt": [
-      "ancient european gothic cemetery",
       "old stone crosses",
       "ivy-covered tombstones",
       "misty atmosphere",
@@ -70,7 +65,6 @@
     "jp": "中世の城の中庭",
     "en": "Medieval Castle Courtyard",
     "prompt": [
-      "medieval castle courtyard",
       "stone walls",
       "torch lights",
       "weathered architecture",
@@ -81,18 +75,16 @@
     "jp": "京都の神社",
     "en": "Kyoto Shrine",
     "prompt": [
-      "kyoto shrine",
       "red torii gates",
       "stone path",
       "wooden shrine structures",
-      "quiet spiritual atmosphere"
+      "soft natural light"
     ]
   },
   {
     "jp": "和室",
     "en": "Traditional Japanese Room",
     "prompt": [
-      "traditional japanese room",
       "tatami floor",
       "shoji screens",
       "wooden interior",
@@ -103,7 +95,6 @@
     "jp": "日本庭園",
     "en": "Japanese Garden",
     "prompt": [
-      "japanese garden",
       "stone lantern",
       "maple trees",
       "koi pond",
@@ -111,21 +102,19 @@
     ]
   },
   {
-    "jp": "中国庭園",
+    "jp": "中国庭園の楼閣",
     "en": "Chinese Garden Pavilion",
     "prompt": [
-      "chinese garden pavilion",
       "curved roof pavilion",
       "lotus pond",
       "ornamental bridge",
-      "elegant classical atmosphere"
+      "soft warm lantern light"
     ]
   },
   {
-    "jp": "中国宮殿回廊",
+    "jp": "宮廷回廊",
     "en": "Imperial Palace Corridor",
     "prompt": [
-      "imperial palace corridor",
       "red columns",
       "gold ornament",
       "traditional tiled roof",
@@ -136,42 +125,127 @@
     "jp": "ヴィクトリアン工房",
     "en": "Victorian Workshop",
     "prompt": [
-      "victorian workshop",
       "brass pipes",
       "wooden workbench",
       "gear mechanisms",
-      "warm sepia interior atmosphere"
+      "warm sepia light"
     ]
   },
   {
-    "jp": "蒸気機関室",
+    "jp": "インダストリアル機関室",
     "en": "Industrial Engine Room",
     "prompt": [
-      "industrial engine room",
       "large gears",
       "steam pipes",
       "metal catwalk",
-      "dramatic industrial setting"
+      "dramatic industrial lighting"
     ]
   },
   {
     "jp": "ミニマルファッションスタジオ",
     "en": "Minimal Fashion Studio",
     "prompt": [
-      "minimal fashion studio",
       "clean white backdrop",
-      "softbox setup",
+      "softbox lighting",
       "fashion runway mood"
     ]
   },
   {
-    "jp": "ダーク編集スタジオ",
+    "jp": "ダークエディトリアルスタジオ",
     "en": "Dark Editorial Studio",
     "prompt": [
-      "dark editorial studio",
       "black seamless background",
       "controlled spotlight",
       "high-fashion contrast lighting"
+    ]
+  },
+
+  {
+    "jp": "朝焼け",
+    "en": "Sunrise Coastline",
+    "prompt": [
+      "soft sunrise sky",
+      "pink and pale orange horizon",
+      "clean early morning air",
+      "gentle low-angle sunlight",
+      "calm premium editorial atmosphere"
+    ]
+  },
+  {
+    "jp": "海辺",
+    "en": "Seaside Shore",
+    "prompt": [
+      "clean seaside shoreline",
+      "soft ocean breeze",
+      "subtle wave texture",
+      "open horizon line",
+      "cinematic fashion travel editorial mood"
+    ]
+  },
+  {
+    "jp": "カフェ",
+    "en": "Elegant Cafe Terrace",
+    "prompt": [
+      "elegant café terrace",
+      "refined outdoor seating",
+      "stone pavement",
+      "tasteful european-style storefront",
+      "premium lifestyle editorial atmosphere"
+    ]
+  },
+  {
+    "jp": "山の上の展望台",
+    "en": "Mountain View Observatory",
+    "prompt": [
+      "mountaintop observatory deck",
+      "wide scenic overlook",
+      "clean railing silhouette",
+      "expansive sky backdrop",
+      "luxury travel editorial atmosphere"
+    ]
+  },
+  {
+    "jp": "夕焼け",
+    "en": "Golden Sunset Horizon",
+    "prompt": [
+      "golden sunset sky",
+      "warm low-angle sunlight",
+      "soft amber horizon glow",
+      "cinematic rim light potential",
+      "romantic editorial atmosphere"
+    ]
+  },
+  {
+    "jp": "工場夜景",
+    "en": "Industrial Night Skyline",
+    "prompt": [
+      "distant industrial night skyline",
+      "refined metallic structures",
+      "controlled city-industrial light points",
+      "deep night atmosphere",
+      "cinematic high-fashion contrast mood"
+    ]
+  },
+  {
+    "jp": "空港滑走路",
+    "en": "Airport Runway",
+    "prompt": [
+      "clean airport runway",
+      "wide open tarmac",
+      "distant aircraft silhouette",
+      "expansive horizon perspective",
+      "luxury travel campaign atmosphere"
+    ]
+  },
+  {
+    "jp": "緑の綺麗な大平原",
+    "en": "Lush Green Open Plain",
+    "prompt": [
+      "lush green open plain",
+      "wide natural grass field",
+      "clean open sky",
+      "fresh natural depth",
+      "serene couture location shoot atmosphere"
     ]
   }
 ]
