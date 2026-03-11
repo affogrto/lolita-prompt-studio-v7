@@ -84,7 +84,15 @@
       "Victorian Workshop": "Warm Workshop Light",
       "Industrial Engine Room": "Steam Engine Dramatic Light",
       "Minimal Fashion Studio": "Softbox Fashion Lighting",
-      "Dark Editorial Studio": "High Fashion Spotlight"
+      "Dark Editorial Studio": "High Fashion Spotlight",
+       "Sunrise Coastline": "Soft Morning Editorial Light",
+      "Seaside Shore": "Soft Morning Editorial Light",
+      "Elegant Cafe Terrace": "Soft Morning Editorial Light",
+      "Mountain View Observatory": "Bright High-Key Editorial",
+      "Golden Sunset Horizon": "Golden Hour Fashion Light",
+      "Industrial Night Skyline": "High Fashion Spotlight",
+      "Airport Runway": "Bright High-Key Editorial",
+      "Lush Green Open Plain": "Soft Garden Light"
     },
     "colorByStyle": {
       "Gothic": "Moonlight Gothic Grade",
@@ -95,10 +103,67 @@
       "Mix": "Luxury Neutral Editorial"
     },
     "colorByStyleScene": {
-      "Wa": {
-        "Kyoto Shrine": "Soft Washi Tone",
-        "Japanese Garden": "Natural Indigo Grade"
-      }
+　  "Gothic": {
+      "Sunrise Coastline": "Antique Gothic Grade",
+      "Seaside Shore": "Moonlight Gothic Grade",
+      "Elegant Cafe Terrace": "Dark Velvet Grade",
+      "Mountain View Observatory": "Moonlight Gothic Grade",
+      "Golden Sunset Horizon": "Antique Gothic Grade",
+      "Industrial Night Skyline": "Dark Velvet Grade",
+      "Airport Runway": "Cool Editorial Grade",
+      "Lush Green Open Plain": "Antique Gothic Grade"
+　　  },
+  "Sweet": {
+    "Sunrise Coastline": "Soft Pastel Grade",
+    "Seaside Shore": "Milk Tea Pastel Grade",
+    "Elegant Cafe Terrace": "Milk Tea Pastel Grade",
+    "Mountain View Observatory": "Soft Pastel Grade",
+    "Golden Sunset Horizon": "Candy Soft Grade",
+    "Industrial Night Skyline": "Candy Soft Grade",
+    "Airport Runway": "Soft Pastel Grade",
+    "Lush Green Open Plain": "Soft Pastel Grade"
+  },
+  "Wa": {
+    "Sunrise Coastline": "Soft Washi Tone",
+    "Seaside Shore": "Natural Indigo Grade",
+    "Elegant Cafe Terrace": "Soft Washi Tone",
+    "Mountain View Observatory": "Natural Indigo Grade",
+    "Golden Sunset Horizon": "Soft Washi Tone",
+    "Industrial Night Skyline": "Natural Indigo Grade",
+    "Airport Runway": "Soft Washi Tone",
+    "Lush Green Open Plain": "Natural Indigo Grade"
+  },
+  "Chinese": {
+    "Sunrise Coastline": "Silk Jade Tone",
+    "Seaside Shore": "Silk Jade Tone",
+    "Elegant Cafe Terrace": "Imperial Red Gold Grade",
+    "Mountain View Observatory": "Silk Jade Tone",
+    "Golden Sunset Horizon": "Imperial Red Gold Grade",
+    "Industrial Night Skyline": "Imperial Red Gold Grade",
+    "Airport Runway": "Silk Jade Tone",
+    "Lush Green Open Plain": "Silk Jade Tone"
+  },
+  "Steampunk": {
+    "Sunrise Coastline": "Sepia Vintage Grade",
+    "Seaside Shore": "Industrial Bronze Grade",
+    "Elegant Cafe Terrace": "Sepia Vintage Grade",
+    "Mountain View Observatory": "Industrial Bronze Grade",
+    "Golden Sunset Horizon": "Sepia Vintage Grade",
+    "Industrial Night Skyline": "Industrial Bronze Grade",
+    "Airport Runway": "Industrial Bronze Grade",
+    "Lush Green Open Plain": "Sepia Vintage Grade"
+  },
+  "Mix": {
+    "Sunrise Coastline": "Luxury Campaign Grade",
+    "Seaside Shore": "Luxury Campaign Grade",
+    "Elegant Cafe Terrace": "Premium Print Grade",
+    "Mountain View Observatory": "Luxury Campaign Grade",
+    "Golden Sunset Horizon": "Warm Editorial Grade",
+    "Industrial Night Skyline": "Luxury Campaign Grade",
+    "Airport Runway": "Cool Editorial Grade",
+    "Lush Green Open Plain": "Premium Print Grade"
+  }
+}
     }
   },
   "locks": {
