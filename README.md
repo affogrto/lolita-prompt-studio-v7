@@ -1,4 +1,4 @@
-# Lolita Prompt Studio V6
+# Lolita Prompt Studio V7
 
 日本語UIで選択し、英語の画像生成用 Prompt を作る静的Webアプリです。  
 GitHub Pages でそのまま公開できます。
