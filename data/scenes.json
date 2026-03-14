@@ -247,5 +247,16 @@
       "fresh natural depth",
       "serene couture location shoot atmosphere"
     ]
+  },
+  {
+    "jp": "ヨーロッパ宮殿外観",
+    "en": "European Palace Exterior",
+    "prompt": [
+      "grand european palace façade",
+      "formal palace courtyard approach",
+      "ornate stone exterior",
+      "symmetrical aristocratic architecture",
+      "refined royal exterior atmosphere"
+    ]
   }
 ]
